@@ -1,0 +1,32 @@
+# LangChain and related integrations
+langchain
+langchain_community
+langchain_openai
+langchain-google-genai
+langchain-google-firestore
+langchain-pinecone
+pinecone-client
+
+# Hugging Face & Transformers
+sentence-transformers
+transformers
+langchain-huggingface
+text-generation
+
+# Google & Firebase
+google-cloud-firestore
+google-generativeai
+firebase-admin
+
+# Web Frameworks & API Tools
+fastapi
+uvicorn
+
+# PDF & File Processing
+pypdf
+
+# Environment Variables
+python-dotenv
+
+# Other Utilities
+numpy
