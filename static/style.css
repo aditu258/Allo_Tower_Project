@@ -1,0 +1,222 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: rgb(44, 47, 59);
+    background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(54, 60, 70), rgb(32, 32, 43));
+    background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.card {
+    height: 500px;
+    border-radius: 15px !important;
+    background-color: rgba(0,0,0,0.4) !important;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.msg_card_body {
+    overflow-y: auto;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.05);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: 0 !important;
+    background-color: rgba(0,0,0,0.3);
+    padding: 15px;
+}
+
+.card-footer {
+    border-radius: 0 0 15px 15px !important;
+    border-top: 0 !important;
+    background-color: rgba(0,0,0,0.3);
+    padding: 8px 15px;
+}
+
+/* Input and Button Styles */
+.type_msg {
+    background-color: rgba(0,0,0,0.3) !important;
+    border: none !important;
+    color: white !important;
+    height: 44px !important;
+    padding: 10px 15px !important;
+    border-radius: 22px 0 0 22px !important;
+    font-size: 14px;
+}
+
+.send_btn {
+    border-radius: 0 22px 22px 0 !important;
+    background-color: rgba(0,0,0,0.3) !important;
+    border: none !important;
+    color: white !important;
+    width: 50px;
+    height: 44px !important;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send_btn:hover {
+    background-color: rgba(0,0,0,0.4) !important;
+}
+
+.send_btn i {
+    font-size: 18px;
+}
+
+/* Header Styles */
+.card-header .d-flex {
+    width: 100%;
+}
+
+/* User Images */
+.img_cont {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+.img_cont_msg {
+    height: 40px;
+    width: 40px;
+}
+
+.user_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1.5px solid #f5f6fa;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    padding: 3px;
+}
+
+.user_img_msg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1.5px solid #f5f6fa;
+    border-radius: 50%;
+}
+
+.online_icon {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    bottom: 0.1em;
+    right: 0.3em;
+    border: 1.5px solid white;
+}
+
+/* Message Bubbles */
+.msg_cotainer {
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #82acff;
+    padding: 10px 15px;
+    position: relative;
+    max-width: 70%;
+    color: white;
+    word-wrap: break-word;
+}
+
+.msg_cotainer_send {
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: #58cc71;
+    padding: 10px 15px;
+    position: relative;
+    max-width: 70%;
+    color: white;
+    word-wrap: break-word;
+}
+
+.msg_time {
+    position: absolute;
+    left: 15px;
+    bottom: -15px;
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+}
+
+.msg_time_send {
+    position: absolute;
+    right: 15px;
+    bottom: -15px;
+    color: rgba(255,255,255,0.5);
+    font-size: 10px;
+}
+
+/* End Chat Button */
+#reset-btn {
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 5px 15px;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s;
+    border-radius: 20px;
+}
+
+#reset-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Header Text */
+.user_info {
+    margin-left: 15px;
+}
+
+.user_info span {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.user_info p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 0;
+}
+
+/* Scrollbar */
+.msg_card_body::-webkit-scrollbar {
+    width: 5px;
+}
+
+.msg_card_body::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+}
+
+.msg_card_body::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .card {
+        height: 100vh;
+        border-radius: 0 !important;
+    }
+    
+    .user_img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .user_info span {
+        font-size: 16px;
+    }
+}
