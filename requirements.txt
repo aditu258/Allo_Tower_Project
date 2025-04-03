@@ -24,3 +24,4 @@ python-dotenv
 
 # Other Utilities
 numpy
+langchain_huggingface
