@@ -105,12 +105,12 @@ async def health_check():
         "status": "ready" if chat_system else "initializing"
     }
 
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 8000))  # Default to 8000 if PORT not set
-    uvicorn.run(
-        "main:app",
-        host="0.0.0.0",
-        port=port,
-        reload=True if os.getenv("ENV") == "development" else False,
-        workers=1
-    )
+    port = int(os.getenv("PORT", 8000))
+    logger.info(f"Starting server on port {port}")
+    uvicorn.run("main:app", host="0.0.0.0", port=port, workers=1)
