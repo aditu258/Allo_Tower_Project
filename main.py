@@ -113,4 +113,4 @@ logger = logging.getLogger(__name__)
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 8000))
     logger.info(f"Starting server on port {port}")
-    uvicorn.run("main:app", host="0.0.0.0", port=port, workers=1)
+    uvicorn.run(app , port=port)
